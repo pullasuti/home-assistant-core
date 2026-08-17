@@ -50,7 +50,7 @@ SENSOR_DESCRIPTIONS = {
     ),
     "pressure": SensorEntityDescription(
         key=f"{SSDSensorDeviceClass.PRESSURE}_{Units.PRESSURE_HPA}",
-        device_class=SensorDeviceClass.PRESSURE,
+        device_class=SensorDeviceClass.ATMOSPHERIC_PRESSURE,
         native_unit_of_measurement=UnitOfPressure.HPA,
         state_class=SensorStateClass.MEASUREMENT,
     ),
